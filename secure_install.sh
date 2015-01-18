@@ -24,7 +24,7 @@ read SSH_PORT
 
 
 
-if [[  "$SSH_PORT" == "" ||  "$ADMIN_EMAIL" == "contact@ubic.pro" ||  "$SMTP_SERVER" == "smtp.gmail.com" ||  "$SMTP_DOMAIN" == "ubic.pro"  || "$SMTP_USER" == "contact@ubic.pro"  || "$SMTP_PASSWORD" == ""  ]]
+if [[  "$SSH_PORT" == "" ||  "$ADMIN_EMAIL" == "" ||  "$SMTP_SERVER" == "" ||  "$SMTP_DOMAIN" == ""  || "$SMTP_USER" == ""  || "$SMTP_PASSWORD" == ""  ]]
 then
 	echo "$(tput setaf 1)All variables not set... exiting ...$(tput sgr0)"
 	exit;
