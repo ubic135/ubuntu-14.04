@@ -97,6 +97,10 @@ sed -i "s/destemail = root@localhost/destemail = $ADMIN_EMAIL/g" /etc/fail2ban/j
 fail2ban-client reload
 /etc/init.d/fail2ban restart
 
+#Portsentry (scan de ports)
+apt-get install portsentry
+
+
 echo "$(tput setaf 1)Install ClamAV$(tput sgr0)"
 apt-get install -y clamav
 
