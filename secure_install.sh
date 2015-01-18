@@ -99,7 +99,8 @@ fail2ban-client reload
 
 #Portsentry (scan de ports)
 apt-get install portsentry
-
+#Install logwatch 
+apt-get install logwatch 
 
 echo "$(tput setaf 1)Install ClamAV$(tput sgr0)"
 apt-get install -y clamav
